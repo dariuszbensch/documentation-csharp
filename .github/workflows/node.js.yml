@@ -29,4 +29,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: github-wiki-sidebar
+    - run: npm install github-wiki-sidebar -g
+    - run: github-wiki-sidebar --git-push
